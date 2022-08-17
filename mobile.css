@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;700&display=swap");
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 1150px) {
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: League Spartan, sans-serif;
+  }
+
+  .main {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /* display: none; */
+  }
+
+  .mob-top {
+    top: 0;
+    left: 0;
+    /* transform: rotate(10deg); */
+  }
+
+  .mob-btm {
+    right: 0;
+    bottom: -35em;
+  }
+
+  :is(.desktop-top, .desktop-btm) {
+    display: none;
+  }
+
+  .container {
+    background-color: transparent;
+  }
+
+  .cont-1 {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5em;
+    padding: 0px 15px 15px 0px;
+    margin-bottom: 10px;
+  }
+
+  :is(.title, .rev-msg) {
+    color: var(--Very-Dark-Magenta);
+  }
+
+  .name {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .buyer-type {
+    color: var(--Soft-Pink);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 1.05em;
+  }
+
+  .para {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    margin-bottom: 25px;
+    color: var(--Dark-Grayish-Magenta);
+  }
+
+  .reviews {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .review {
+    text-align: center;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .review > * {
+    margin: 10px;
+  }
+
+  .stars > img {
+    margin: 0px 3px 0px 3px;
+  }
+
+  .cont-2 {
+    margin-bottom: 25px;
+  }
+
+  .profile-box {
+    border-radius: 10px;
+    padding: 30px 25px 30px 25px;
+    margin: 20px 0px 20px 0px;
+    background-color: var(--Very-Dark-Magenta);
+  }
+
+  .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .pro-img img {
+    margin-right: 20px;
+    height: 3em;
+    border-radius: 50%;
+  }
+
+  .name-info > * {
+    margin: 5px;
+    text-align: left;
+  }
+
+  .pro-content {
+    line-height: 1.5em;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: white;
+    opacity: 90%;
+  }
+}
